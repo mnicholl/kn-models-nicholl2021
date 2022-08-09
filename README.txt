@@ -18,7 +18,8 @@ light_curves_ascii
 full_output
 - contains the MOSFIT output files in json format. This includes the model setup and derived properties such as ejecta masses and velocities for each realisation, as well as the light curve in Open Astronomy Catalogs format. Note that to keep storage requirements manageable, only a subset of models are provided here: those with 10% of the remnant disk ejected, no shock heating, no increased blue ejecta, and a fixed viewing angle of 60 degrees.
 
-The python script get_ejecta_parameters.py will reconstruct the ejected mass, velocity and opacity for an arbitrary model
+The python script get_ejecta_parameters.py will reconstruct the ejected mass, velocity and opacity for an arbitrary model. Usage:
+python get_ejecta_parameters.py M1.20_q1.00_d0.4_v00_C0.2_a2.0.txt
 
 
 ------
