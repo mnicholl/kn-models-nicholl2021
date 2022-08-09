@@ -1,7 +1,7 @@
 README
 
 If using any of this data, please cite:
-Nicholl et al 2021, MNRAS
+Nicholl et al 2021, MNRAS, 505, 3016
 "Tight multi-messenger constraints on the neutron star equation of state from GW170817 and a forward model for kilonova light curve synthesis"
 
 https://ui.adsabs.harvard.edu/abs/2021arXiv210202229N/abstract
@@ -12,7 +12,7 @@ https://ui.adsabs.harvard.edu/abs/2021arXiv210202229N/abstract
 Directory structure
 
 light_curves_ascii
-- contains the main data products: tab-separated UV to NIR light curves for each model realisation. All light curves are in absolute AB magnitudes in the kilonova rest frame. Included filters are the Swift/UVOT UV bands, LSST ugrizy bands, and NIR JHK bands.
+- contains the main data products: tab-separated UV to NIR light curves for each model realisation. All light curves are in absolute AB magnitudes in the kilonova rest frame. Included filters are the Swift/UVOT UV bands, LSST ugrizy bands, PanSTARRS w, ATLAS c and o, and NIR JHK bands.
 
 
 full_output
