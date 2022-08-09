@@ -11,8 +11,9 @@ for i in glob.glob('bns_generative_extras*'):
     mags = np.array(d['model_observations'])
     bands = np.array(d['all_bands'])
 
-    d1 = list(zip(times[bands=='u'],mags[bands=='UVW2'],mags[bands=='UVM2'],mags[bands=='UVW1'],mags[bands=='u'],mags[bands=='g'],mags[bands=='r'],mags[bands=='i'],mags[bands=='z'],mags[bands=='y'],mags[bands=='J'],mags[bands=='H'],mags[bands=='K']))
-
     out = i.split('extras_')[-1].split('.json')[0] + '.txt'
 
-    np.savetxt(out,d1,fmt='%.3f',header='day\tW2\tM2\tW1\tu\tg\tr\ti\tz\ty\tJ\tH\tK',delimiter='\t')
+
+    d1 = list(zip(times[bands=='u'], mags[bands=='UVW2'], mags[bands=='UVM2'], mags[bands=='UVW1'], mags[bands=='u'], mags[bands=='B'], mags[bands=='g'], mags[bands=='V'], mags[bands=='c'], mags[bands=='r'], mags[bands=='w'], mags[bands=='o'], mags[bands=='i'], mags[bands=='z'], mags[bands=='y'], mags[bands=='J'], mags[bands=='H'], mags[bands=='K']))
+
+    np.savetxt(out,d1,fmt='%.3f',header='day W2 M2 W1 u B g V c r w o i z y J H K')
